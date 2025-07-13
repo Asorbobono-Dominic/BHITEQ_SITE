@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | BHITEQ</title>
+  <link rel="stylesheet" href="admin-style.css" />
+  <script defer src="admin-script.js"></script>
+</head>
+<body>
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="admin-name">👤 Admin</div>
+      <nav>
+        <ul>
+          <li class="active" data-section="overview">📊 Overview</li>
+          <li data-section="users">👥 Users</li>
+          <li data-section="messages">✉️ Messages</li>
+          <li data-section="content">📝 Content</li>
+          <li data-section="analytics">📈 Analytics</li>
+          <li id="logout">🚪 Logout</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section id="overview" class="dashboard-section active">
+        <h2>Dashboard Overview</h2>
+        <div class="stats">
+          <div class="stat-box">Users: <span>120</span></div>
+          <div class="stat-box">Messages: <span>45</span></div>
+          <div class="stat-box">Site Visits: <span>3,200</span></div>
+        </div>
+      </section>
+
+      <section id="users" class="dashboard-section">
+        <h2>User Management</h2>
+        <ul class="user-list">
+          <li>Dominic - dominic@bhiteq.com</li>
+          <li>Jane Doe - jane@example.com</li>
+        </ul>
+      </section>
+
+      <section id="messages" class="dashboard-section">
+        <h2>Messages</h2>
+        <ul class="message-list">
+          <li><strong>John:</strong> Please approve my certificate.</li>
+          <li><strong>Sarah:</strong> Interested in your training program.</li>
+        </ul>
+      </section>
+
+      <section id="content" class="dashboard-section">
+        <h2>Edit Website Content</h2>
+        <textarea placeholder="Update homepage content..."></textarea>
+        <button>Save Changes</button>
+      </section>
+
+      <section id="analytics" class="dashboard-section">
+        <h2>Analytics</h2>
+        <p>Real-time user activity will be shown here.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
